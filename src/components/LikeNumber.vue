@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     increment: function() {
-      this.number++;
+      this.$emit('my-click', this.totalNumber + 1)
     }
   }
 };
