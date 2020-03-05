@@ -1,15 +1,19 @@
 <template>
     <div>
-        <slot name="title">デフォルトのコンテンツ</slot>
-        <slot naem="number"></slot>
-        <slot></slot>
         <slot></slot>
     </div>
 </template>
 
 <script>
 export default {
-    props: ["headerText"]
+    data() {
+        return {
+            user: {
+                firstName: 'Jack',
+                lastName: 'Donald'
+            }
+        }
+    }
 }
 </script>
 
