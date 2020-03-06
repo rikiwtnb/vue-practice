@@ -12,6 +12,7 @@ export default {
       type: Number,
       default: 8       
     },
+    // eslint-disable-next-line vue/require-default-prop
     testProps: {
       type: String
     }
