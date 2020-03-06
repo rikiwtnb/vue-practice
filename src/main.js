@@ -5,7 +5,11 @@ import LikeNumer from './components/LikeNumber.vue'
 Vue.config.productionTip = false
 
 //componentのグローバル登録
-Vue.component('LikeNumber', LikeNumer)
+Vue.component('LikeNumber', LikeNumer);
+Vue.filter("upperCase", function(value){
+  return value.toUpperCase();
+});
+
 
 new Vue({
   render: h => h(App),
